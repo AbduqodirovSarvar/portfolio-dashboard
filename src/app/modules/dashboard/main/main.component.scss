@@ -1,0 +1,51 @@
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+.sidebar {
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.content {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.content-header{
+  width: 100%;
+  height: 40px;
+}
+
+.mainContext{
+  width: 100%;
+}
+
+img{
+  border-radius: 50%;
+  width: auto;
+  height: 50px;
+}
+
+.sidebar-closed {
+  display: none;
+}
+
+.container-fluid{
+  height: 100vh !important;
+}
+.height{
+  height: 100%;
+}
+
+.button-container {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    width: 100% !important;
+  }
+}

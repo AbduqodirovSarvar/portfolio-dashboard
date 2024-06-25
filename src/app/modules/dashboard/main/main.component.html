@@ -1,0 +1,77 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- <div *ngIf="isSidebarOpen" class="col-12 col-md-3 col-lg-2 d-flex flex-column justify-content-between sidebar" style="height: 100vh;">
+      <div class="d-flex align-items-center mb-3 flex-column w-100">
+        <div class="col-10 col-md-12 w-100">
+
+          <div class="row mb-3 align-items-center">
+            <div class="col-auto">
+              <button mat-mini-fab aria-label="Example icon button with a menu icon" (click)="toggleSidebar()">
+                <mat-icon>menu</mat-icon>
+              </button>
+            </div>
+            <div class="col-auto">
+              <img src="../../../../assets/images/image.png" class="img-fluid" alt="img" style="height: 50px; width: auto; border-radius: 50%;">
+            </div>
+            <div class="col">
+              <div>
+                <p class="mb-0">Test</p>
+                <p class="mb-0">Testov</p>
+              </div>
+            </div>
+          </div> -->
+
+
+
+          <!-- Scrollable Flex Items -->
+          <!-- <div class="d-flex flex-column mb-3" style="overflow-y: auto; max-height: calc(100vh - 200px);">
+            <hr>
+            <div *ngFor="let item of [1,2,3,4,5,6,7,8,1,1,1,1,1,1]" class="justify-content-between align-items-center">
+              <div>
+                Flex item {{item}}
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Footer Section for Settings Button -->
+      <!-- <div class="row mt-auto">
+        <div class="col-12">
+          <div class="d-flex flex-column">
+            <button class="btn btn-outline-secondary btn-sm mb-2">
+              <i class="fas fa-cog me-1"></i> Settings
+            </button>
+            <button class="btn btn-outline-secondary btn-sm">
+              <i class="fas fa-sign-out-alt me-1"></i> Sign Out
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <!-- Main Content -->
+    <div *ngIf="isContentOpen" [ngClass]="{'mainContext' : isSidebarOpen == false}" class="col-12 col-md-9 col-lg-10 d-flex flex-column content" style="height: 100vh; overflow-y: auto;">
+      <div class="content-header d-flex justify-content-between align-items-center mb-3">
+        <div *ngIf="!isSidebarOpen" class="button-container">
+          <button mat-mini-fab aria-label="Example icon button with a menu icon" (click)="toggleSidebar()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+        <div class="text-center flex-grow-1" style="background-color: white;">
+          <p class="mb-0">Title</p>
+        </div>
+        <div class="ms-3">
+          <button class="btn btn-primary btn-sm">Add</button>
+        </div>
+      </div>
+      <hr>
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+</div>
+
