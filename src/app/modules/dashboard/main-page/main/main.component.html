@@ -1,5 +1,5 @@
-<div class="container-fluid">
-  <div class="row">
+<!-- <div class="container-fluid">
+  <div class="row"> -->
 
     <!-- <div *ngIf="isSidebarOpen" class="col-12 col-md-3 col-lg-2 d-flex flex-column justify-content-between sidebar" style="height: 100vh;">
       <div class="d-flex align-items-center mb-3 flex-column w-100">
@@ -54,7 +54,7 @@
 
 
     <!-- Main Content -->
-    <div *ngIf="isContentOpen" [ngClass]="{'mainContext' : isSidebarOpen == false}" class="col-12 col-md-9 col-lg-10 d-flex flex-column content" style="height: 100vh; overflow-y: auto;">
+    <!-- <div *ngIf="isContentOpen" [ngClass]="{'mainContext' : isSidebarOpen == false}" class="col-12 col-md-9 col-lg-10 d-flex flex-column content" style="height: 100vh; overflow-y: auto;">
       <div class="content-header d-flex justify-content-between align-items-center mb-3">
         <div *ngIf="!isSidebarOpen" class="button-container">
           <button mat-mini-fab aria-label="Example icon button with a menu icon" (click)="toggleSidebar()">
@@ -71,7 +71,14 @@
       <hr>
       <router-outlet></router-outlet>
     </div>
+  </div>
+</div> -->
 
+<div class="d-flex">
+  <div>
+    <app-side-bar></app-side-bar>
+  </div>
+  <div class="flex-grow-1">
+    <app-content-header></app-content-header>
   </div>
 </div>
-
