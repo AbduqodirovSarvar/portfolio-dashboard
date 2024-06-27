@@ -1,0 +1,84 @@
+<div class="container mt-3">
+  <h2>Orders</h2>
+  <div class="row g-3">
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <i class="bi bi-arrow-repeat" style="font-size: 2rem; color: green;"></i>
+          <h5 class="card-title">Benefits</h5>
+          <p class="card-text">4581</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <i class="bi bi-check-circle" style="font-size: 2rem; color: blue;"></i>
+          <h5 class="card-title">Total sold products</h5>
+          <p class="card-text">1254</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-body">
+          <i class="bi bi-check-square" style="font-size: 2rem; color: red;"></i>
+          <h5 class="card-title">Total received products</h5>
+          <p class="card-text">548</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Orders Table -->
+  <div class="table-responsive mt-4">
+    <table class="table table-bordered table-hover">
+      <thead class="table-light">
+        <tr>
+          <th scope="col">#Orders</th>
+          <th scope="col">Products</th>
+          <th scope="col">SKU</th>
+          <th scope="col">Price</th>
+          <th scope="col">Categories</th>
+          <th scope="col">Order Status</th>
+          <th scope="col">Rate</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#276354</td>
+          <td>OnePlus Nord N30 5G Smart Phone</td>
+          <td>HY5480</td>
+          <td>$250</td>
+          <td>Electronics</td>
+          <td><span class="badge bg-success">Completed</span></td>
+          <td><i class="bi bi-star-fill" style="color: orange;"></i> 4.2</td>
+          <td><i class="bi bi-three-dots"></i></td>
+        </tr>
+        <!-- Repeat rows for other orders -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Pagination -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center mt-4">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
